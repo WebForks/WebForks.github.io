@@ -328,6 +328,14 @@ h3 {
   height: 100vh;
 }
 
+.section-divider {
+  border: none;
+  border-top: 1.5px solid #e0e0e0;
+  margin: 40px auto 40px auto;
+  width: 100%;
+  max-width: 900px; /* or your content width */
+  opacity: 5.8;
+}
 /* Original */
 
 /* #intro.section {
@@ -778,4 +786,60 @@ small {
   color: #111 !important;
   font-weight: bold !important;
   /* Remove background or text-shadow if any */
+}
+
+/* --- Education Section Redesign --- */
+.education-list {
+  margin-top: 2rem;
+}
+
+.education-item {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.education-degree {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+.education-school {
+  font-size: 1.1rem;
+  color: #888;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.education-date {
+  font-size: 1rem;
+  color: #111;
+  min-width: 180px;
+  text-align: right;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+
+.education-item ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.education-item ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
 }
