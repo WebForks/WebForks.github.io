@@ -303,7 +303,7 @@ li.logo span {
   margin: 0.5rem 0; /* a bit of vertical breathing room */
 }
 .caption .contact-info a {
-  color: #2196f3; /* Materialize’s default blue */
+  color: #2196f3; /* Materialize's default blue */
   text-decoration: none; /* remove the underline by default */
 }
 .caption .contact-info a:hover {
@@ -717,4 +717,65 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+}
+
+/* --- Experience Section Redesign --- */
+.experience-list {
+  margin-top: 2rem;
+}
+
+.experience-item {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.experience-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+.experience-company {
+  font-size: 1.1rem;
+  color: #888;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.experience-date {
+  font-size: 1rem;
+  color: #2471a3;
+  min-width: 180px;
+  text-align: right;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+
+.experience-item ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+}
+
+.experience-item ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.page-title {
+  color: #111 !important;
+  font-weight: bold !important;
+  /* Remove background or text-shadow if any */
 }
