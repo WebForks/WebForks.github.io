@@ -843,3 +843,83 @@ small {
   color: #444;
   line-height: 1.7;
 }
+
+/* --- Projects Section Redesign --- */
+.projects-list {
+  margin-top: 2rem;
+}
+
+.project-item {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+.project-type {
+  font-size: 1.1rem;
+  color: #888;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.project-date {
+  font-size: 1rem;
+  color: #111;
+  min-width: 100px;
+  text-align: right;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+
+.project-item ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.project-item ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  color: #2471a3;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.project-link i {
+  margin-right: 0.5rem;
+}
+
+.project-link:hover {
+  color: #1a5276;
+  text-decoration: underline;
+}
