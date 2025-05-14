@@ -1,17 +1,16 @@
 .profile-pic {
   position: relative;
-  max-width:130px;
-  max-height:130px;
+  max-width: 130px;
+  max-height: 130px;
   width: auto;
   height: auto;
   overflow: hidden;
   /* display: inline-block; */
-  
-  
+
   /* background-size: cover;  */
-  margin: -31px; 
-  margin-left:-7px;
-  border: 6px solid rgba(0, 77, 64, 0.4); 
+  margin: -31px;
+  margin-left: -7px;
+  border: 6px solid rgba(255, 255, 255, 0.4) !important;
   border-radius: 50% !important;
 }
 
@@ -24,7 +23,7 @@
   /* visibility: hidden; */
   position: fixed;
   /* margin-inline-end: auto;  */
-  bottom: 0; 
+  bottom: 0;
   right: 0;
 }
 
@@ -41,7 +40,7 @@
   width: 50px;
   height: 50px;
   border: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-size: 30px;
   line-height: 70px;
@@ -63,8 +62,8 @@
 }
 
 .icon-btn:hover {
-  transform: scale(1.10);
-  color: #FFFFFF;
+  transform: scale(1.1);
+  color: #ffffff;
 }
 
 .linkedin:hover {
@@ -85,8 +84,8 @@
   position: relative;
   padding: 11px 35px;
   background: #fff;
-  color: #00796b;
-  border: 2px solid #fff;
+  color: #0077b5;
+  border: 2px solid #0077b5;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
@@ -95,17 +94,17 @@
   -webkit-border-radius: 5px;
 }
 
-/* .readme:hover{
+.readme:hover {
   color: white;
-  background-color: #00796b;
-} */
+  background-color: #0077b5;
+}
 
 .contactme {
   position: relative;
   padding: 11px 35px;
   background: none;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #0077b5;
+  border: 2px solid #0077b5;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
@@ -115,9 +114,9 @@
   -webkit-border-radius: 5px;
 }
 
-.contactme:hover{
-  color: #00796b;
-  background-color: white;
+.contactme:hover {
+  color: white;
+  background-color: #0077b5;
 }
 /* main body */
 
@@ -175,7 +174,7 @@ blockquote * {
 /* main nav */
 
 nav {
-  background: white;
+  background: #2471a3;
   box-shadow: none;
   height: 0;
 }
@@ -201,7 +200,7 @@ nav i {
 
 main {
   background: url(../../assets/img/bg.png) repeat;
-  padding-left: 190px;
+  padding-left: 280px;
 }
 
 dl {
@@ -220,7 +219,8 @@ dt {
 }
 
 ul.side-nav {
-  width: 190px;
+  width: 280px;
+  background-color: #2471a3;
 }
 
 ul.side-nav li {
@@ -237,13 +237,14 @@ ul.side-nav li {
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: rgb(16, 202, 56);
+  color: white !important;
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
 }
 
-ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
+ul.table-of-contents li.logo a.active,
+ul.table-of-contents li.logo a:hover {
   border: none;
   font-weight: 200;
 }
@@ -257,8 +258,8 @@ ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
 } */
 
 ul.side-nav.fixed li.logo {
-  background-color: #fafafa;
-  border-bottom: 1px solid #ddd;
+  background-color: #2471a3;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-sizing: content-box;
   min-height: 90px;
   padding: 30px 30px 40px;
@@ -269,13 +270,15 @@ ul.side-nav.fixed li.logo a {
   line-height: 100%;
 }
 
-ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) a:hover {
-  background-color: #fafafa;
-  border-left: 3px solid;
+ul.table-of-contents li:not(.logo) a.active,
+ul.table-of-contents li:not(.logo) a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid white;
 }
 
-ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
-  color: #333 !important;
+ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
+ul#slide-out li:not(.logo) a span {
+  color: white !important;
 }
 
 li.logo span {
@@ -292,6 +295,19 @@ li.logo span {
 
 .container {
   width: 95%;
+}
+
+/* —————— in style.css —————— */
+.caption .contact-info {
+  font-size: 1.75rem; /* between your h2 and h5 sizes */
+  margin: 0.5rem 0; /* a bit of vertical breathing room */
+}
+.caption .contact-info a {
+  color: #2196f3; /* Materialize’s default blue */
+  text-decoration: none; /* remove the underline by default */
+}
+.caption .contact-info a:hover {
+  text-decoration: underline;
 }
 
 h3 {
@@ -320,12 +336,12 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: white repeat;
   position: relative;
 }
 
 #intro.section .container {
-  color: white;
+  color: #333;
   font-weight: 200;
   left: 0;
   position: absolute;
@@ -344,24 +360,20 @@ h3 {
   /* font-weight: 400; */
   line-height: 150%;
   /* padding: 0 0px; */
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: none;
 }
 
 #intro.section .underline {
-  border-bottom: 5px solid #24305e;
+  border-bottom: none;
 }
 
 #intro.section .teal {
-  padding: 0 10px;
+  padding: 0;
+  color: #333;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+  display: none;
 }
 
 .waves-effect.waves-blue .waves-ripple {
@@ -597,12 +609,13 @@ small {
     width: 100%;
   }
   nav {
-    background: #fff;
+    background: #2471a3;
     height: 64px;
     position: absolute;
   }
-  nav a.button-collapse, nav a.button-collapse i {
-    color: #009688;
+  nav a.button-collapse,
+  nav a.button-collapse i {
+    color: white;
     height: 56px;
     line-height: 56px;
   }
@@ -627,19 +640,23 @@ small {
     width: 100%;
     position: absolute;
   }
-  .name-title>span, .name-title>a {
+  .name-title > span,
+  .name-title > a {
     position: relative;
     line-height: 20px;
   }
   .name-title a {
     font-size: 22px;
     display: block;
+    color: white !important;
   }
   .name-title span {
     display: block;
     font-size: 14px;
+    color: rgba(255, 255, 255, 0.8) !important;
   }
-  h3, .container {
+  h3,
+  .container {
     position: relative;
     top: 64px;
   }
@@ -650,6 +667,15 @@ small {
     position: relative;
     right: initial;
     top: initial;
+  }
+  #slide-out {
+    background-color: #2471a3;
+  }
+  #slide-out li a {
+    color: white !important;
+  }
+  #slide-out li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
 

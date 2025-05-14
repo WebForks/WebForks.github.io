@@ -84,14 +84,19 @@
   <!-- Navigation Menu-->
   <!-- Nav class 1 -->
   <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
-
+    <ul class="side-nav fixed section table-of-contents"
+      style="display: flex; flex-direction: column; justify-content: center; height: 100vh;">
       <li class="logo">
         <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
           class="brand-logo grey-blue-text">
           <!-- EL Change Profile Picture -->
           <img src="/assets/img/passport-new.jpg" class="circle img-responsive profile-pic" alt="avatar">
         </a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Me section" href="#intro" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>Me</span></a>
       </li>
 
       <li class="bold">
@@ -105,52 +110,22 @@
       </li>
 
       <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
         <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
             class="mdi-av-my-library-books small"></i><span>Projects</span></a>
       </li>
-      <!--
+
       <li class="bold">
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-      <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-          class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      -->
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
         <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-school small"></i><span>Education</span></a>
       </li>
 
       <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
         <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
             class="mdi-content-mail small"></i><span>Contact</span></a>
       </li>
 
       <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
-          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open Ethan's resume in a new tab" href="https://WebForks.github.io/assets/resume/resume.pdf"
+        <a aria-label="Open Ethan's resume in a new tab" href="https://WebForks.github.io/assets/files/resume.pdf"
           target="_blank" class="waves-effect waves-dark teal-text"><i
             class="mdi-file-folder-open small"></i><span>Resume</span></a>
       </li>
@@ -161,7 +136,7 @@
   <nav class="hide-on-large only trigger z-depth-1">
     <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
       class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
+    <div class="name-title" style="display: flex; align-items: center; height: 100%;">
       <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Ethan Liu</a><span
         class="black-text">Software Developer</span>
     </div>
@@ -169,7 +144,13 @@
 
   <!-- Nav class 3 -->
   <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
+    <ul id="slide-out" class="side-nav"
+      style="display: flex; flex-direction: column; justify-content: center; height: 100vh;">
+      <li class="bold">
+        <a aria-label="Navigate to the Me section" href="#intro" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>Me</span></a>
+      </li>
+
       <li class="bold">
         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-person small"></i><span>About</span></a>
@@ -197,9 +178,9 @@
             class="mdi-content-mail small"></i><span>Contact</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Open Varad's Resume in a new tab"
-          href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+        <a aria-label="Open Ethan's Resume in a new tab" href="https://WebForks.github.io/assets/resume/resume.pdf"
+          target="_blank" class="waves-effect waves-dark teal-text"><i
+            class="mdi-file-folder-open small"></i><span>Resume</span></a>
       </li>
     </ul>
   </nav>
@@ -210,44 +191,39 @@
     <section id="intro" class="section scrollspy full-height">
       <div class="overlay"></div>
       <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Ethan Liu.</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and
-                challenging real-world problems.</h5>
-            </div>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/ethan-liu-/" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/WebForks/" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
+        <div class="row valign-wrapper" style="height: 100vh;">
+          <div class="col s12">
+            <div class="content section-padding" style="margin-left: 10%;">
+              <div class="caption">
+                <h2 style="font-weight: bold;">
+                  Hi, I’m Ethan Liu.
+                </h2>
 
-              <!-- <a href="https://angel.co/u/varad_bhogayata" target="_blank">
-                <button class="icon-btn angellist">
-                  <i class="fa fa-angellist"></i>
-                </button>
-              </a> -->
+                <p class="contact-info">
+                  Los Angeles ·
+                  <a href="mailto:eliuusa@gmail.com">eliuusa@gmail.com</a>
+                </p>
 
-              <!-- <a href="http://linkedin.com/in/varadbhogayata" target="_blank">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-
-                  </span>
-              </a> -->
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
+                <h5>
+                  I am an enthusiastic software developer who enjoys building cool software and solving problems.
+                </h5>
+              </div>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/ethan-liu-/" target="_blank">
+                  <button class="icon-btn linkedin">
+                    <i class="fa fa-linkedin"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/WebForks/" target="_blank">
+                  <button class="icon-btn github">
+                    <i class="fa fa-github"></i>
+                  </button>
+                </a>
+              </div>
+              <div class='buttons'>
+                <a href="/assets/files/resume.pdf" target="_blank" class="readme">View Resume as PDF</a>
+                <a href="/assets/files/project.pdf" target="_blank" class="contactme">View Projects as PDF</a>
+              </div>
             </div>
           </div>
         </div>
