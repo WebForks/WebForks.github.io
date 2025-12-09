@@ -292,12 +292,18 @@
             <div class="experience-date">June 2025 - Present</div>
           </div>
           <ul>
-            <li>• Developed a Python-based web testing application enabling remote testing and viewing of mainframe
-              products.</li>
-            <li>• Migrated backend services from a legacy architecture to a new platform, enhancing system scalability,
-              performance, and maintainability.</li>
-            <li>• Set up and configured an LDAP directory service in Docker containers on a Linux environment,
-              centralizing authentication and streamlining user management.</li>
+            <li>• Developed and deployed a Python web application that lets users run unit tests remotely from their
+              browser on the
+              mainframe (z/OS).</li>
+            <li>• Designed and shipped an AI documentation assistant: fine-tuned an LLM and implemented RAG over Tone
+              product docs and IBM z/OS/ISPF procedures to guide customers and internal developers with step-by-step
+              integration help and cited answers.</li>
+            <li>• Engineered C# dataset management supporting Tones DYNA-STEP (dynamic STEPLIB allocation and ISPF
+              library management), enabling on-the-fly environment switching and multi-version access without logging
+              off.</li>
+            <li>• Built a cross-platform C++ command-line utility for the mainframe that parses and extracts
+              TrueType/OpenType
+              font files from PDFs.</li>
             <li><b>Tools:</b> C++, Python, Java, C#, JCL, Docker, MinIO, PostgreSQL, Git</li>
           </ul>
         </div>
@@ -329,7 +335,7 @@
               <div class="experience-title">Application Development Intern</div>
               <div class="experience-company">Siemens DISW</div>
             </div>
-            <div class="experience-date">June 2023 - Present</div>
+            <div class="experience-date">June 2023 - June 2025</div>
           </div>
           <ul>
             <li>• Converted OpenRoad and Perl user scripts from Ingress to PostgreSQL syntax for the PostgresSQL
@@ -353,7 +359,7 @@
               <div class="experience-title">Application Development Intern</div>
               <div class="experience-company">Headstarter</div>
             </div>
-            <div class="experience-date">June 2023 - Present</div>
+            <div class="experience-date">June 2023 - December 2023</div>
           </div>
           <ul>
             <li>• Converted OpenRoad and Perl user scripts from Ingress to PostgreSQL syntax for the PostgresSQL
@@ -385,6 +391,20 @@
             <div class="education-item">
               <div class="education-header">
                 <div>
+                  <div class="education-degree">M.S. in Data Science</div>
+                  <div class="education-school">University of Pennsylvania</div>
+                </div>
+                <div class="education-date">December 2025 - Present</div>
+              </div>
+              <ul>
+                <li><b>GPA:</b> N/A</li>
+                <li><b>Relevant Coursework:</b> N/A</li>
+              </ul>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div>
                   <div class="education-degree">B.S. in Computer Science</div>
                   <div class="education-school">California State University, Long Beach</div>
                 </div>
@@ -409,6 +429,69 @@
     <section id="projects" class="section scrollspy">
       <h3 class="page-title" style="text-align: center;">Projects</h3>
       <div class="container projects-list">
+
+
+        <div class="project-item">
+          <div class="project-header">
+            <div>
+              <div class="project-title">MicroPython-WorkBench</div>
+              <div class="project-type">VsCode Extension</div>
+            </div>
+            <div class="project-date">2022</div>
+          </div>
+          <ul>
+            <li>• Shipped a VS Code extension (TypeScript, VS Code Extension API, Node.js) for MicroPython/ESP32 that
+              delivers remote file browsing, REPL, run/stop/reset, and firmware flashing via mpremote/esptool,
+              now serving 100+ active users.</li>
+            <li>• Engineered a manifest-based two-way sync pipeline with .mpyignore, diffing, and auto-sync-on-save,
+              using mpremote transfer primitives plus status bar telemetry and tree views for Local→Board and
+              Board→Local workflows.</li>
+            <li>• Rebuilt serial comms on mpremote with a connection manager (health checks, retries, debounced ops),
+              REPL auto-suspend/strict handshakes, and port normalization to reduce contention across Windows/
+              macOS/Linux.</li>
+            <li>• Implemented Python interpreter discovery (VS Code Python API, venv/conda/pyenv aware) with caching,
+              dependency validation for mpremote/esptool, and guided installs to harden onboarding.</li>
+            <li>• Added firmware flashing UX: board detection, firmware catalog lookup, HTTPS download, esptool
+              invocation at 460800 baud, and REPL shutdown/reconnect for deterministic flashing.</li>
+            <li><b>Tools:</b> TypeScript, Node.js, VS Code Extension API, Python</li>
+          </ul>
+          <div class="project-links">
+            <a aria-label="Visit website"
+              href="https://marketplace.visualstudio.com/items?itemName=WebForks.MicroPython-WorkBench" target="_blank"
+              class="project-link"><i class="fa fa-external-link"></i> Extension Webpage</a>
+            <a aria-label="Visit GitHub repo" href="https://github.com/WebForks/DiscordCloud" target="_blank"
+              class="project-link"><i class="fa fa-github"></i> Source Code</a>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <div>
+              <div class="project-title">Web-File-Viewer</div>
+              <div class="project-type">Full-Stack application</div>
+            </div>
+            <!-- <div class="project-date">2021</div> -->
+          </div>
+          <ul>
+            <li>• Developed a full-stack web application using Flask and Python that provides an interactive file system
+              browser with real-time directory navigation, file search capabilities, and detailed file metadata display
+              (size, last modified date).
+            </li>
+            <li>• Implemented advanced features including recursive file searching, directory size calculation, and
+              sortable columns for file attributes, with optimized performance using caching and multi-threading
+            </li>
+            <li>• Containerized the application using Docker and Docker Compose, enabling easy deployment and volume
+              mounting for secure file system access across different environments.</li>
+            <li><b>Tools:</b> Python, Flask, HTML, CSS, JavaScript, Docker, Git</li>
+          </ul>
+          <div class="project-links">
+            <a aria-label="Visit website" href="https://fileviewer.sneedbox.moe/" target="_blank"
+              class="project-link"><i class="fa fa-external-link"></i> Live Demo</a>
+
+            <a aria-label="Visit GitHub repo" href="https://github.com/WebForks/web-file-viewer" target="_blank"
+              class="project-link"><i class="fa fa-github"></i> Source Code</a>
+          </div>
+        </div>
 
         <div class="project-item">
           <div class="project-header">
@@ -482,31 +565,6 @@
           </div>
         </div>
 
-        <div class="project-item">
-          <div class="project-header">
-            <div>
-              <div class="project-title">Web-File-Viewer</div>
-              <div class="project-type">Full-Stack application</div>
-            </div>
-            <!-- <div class="project-date">2021</div> -->
-          </div>
-          <ul>
-            <li>• Developed a full-stack web application using Flask and Python that provides an interactive file system
-              browser with real-time directory navigation, file search capabilities, and detailed file metadata display
-              (size, last modified date).
-            </li>
-            <li>• Implemented advanced features including recursive file searching, directory size calculation, and
-              sortable columns for file attributes, with optimized performance using caching and multi-threading
-            </li>
-            <li>• Containerized the application using Docker and Docker Compose, enabling easy deployment and volume
-              mounting for secure file system access across different environments.</li>
-            <li><b>Tools:</b> Python, Flask, HTML, CSS, JavaScript, Docker, Git</li>
-          </ul>
-          <div class="project-links">
-            <a aria-label="Visit GitHub repo" href="https://github.com/WebForks/web-file-viewer" target="_blank"
-              class="project-link"><i class="fa fa-github"></i> Source Code</a>
-          </div>
-        </div>
 
       </div>
     </section>
