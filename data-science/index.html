@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ethan Liu | Data Science Portfolio</title>
+  <meta name="description"
+    content="Data science and applied AI portfolio for Ethan Liu, focused on RAG systems, AI tooling, and data-driven applications.">
+  <meta name="author" content="Ethan Liu">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ethan Liu | Data Science Portfolio">
+  <meta property="og:description"
+    content="Data science and applied AI portfolio for Ethan Liu, focused on RAG systems, AI tooling, and data-driven applications.">
+  <meta property="og:url" content="https://ethanliu.dev/data-science/">
+  <meta property="og:site_name" content="Ethan Liu">
+  <meta property="og:image" content="https://ethanliu.dev/examples/preview.JPG">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ethan Liu | Data Science Portfolio">
+  <meta name="twitter:description"
+    content="Data science and applied AI portfolio for Ethan Liu, focused on RAG systems, AI tooling, and data-driven applications.">
+  <meta name="twitter:image" content="https://ethanliu.dev/examples/preview.JPG">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&family=Rajdhani:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/img/favicon/manifest.json">
+  <meta name="theme-color" content="#0a0f14">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <header class="nav-bar" data-nav>
+    <div class="top-bar section-shell">
+      <a class="name-header" href="../" aria-label="Navigate to ethanliu.dev">Ethan Liu</a>
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-header" data-menu>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="section-shell hero-grid">
+        <div class="hero-visual reveal reveal-left">
+          <div class="portrait-frame">
+            <img src="../assets/img/passport-new.jpg" alt="Portrait of Ethan Liu">
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow reveal reveal-right">// Data Science &amp; Applied AI</p>
+          <h1 class="reveal reveal-right reveal-delay-1">Hello,</h1>
+          <h2 class="reveal reveal-right reveal-delay-2">I'm Ethan Liu</h2>
+          <p class="hero-subtitle reveal reveal-right reveal-delay-3">
+            Data science and AI portfolio focused on RAG systems, AI tooling, local LLM workflows, and
+            production-minded machine learning applications.
+          </p>
+          <p class="hero-detail reveal reveal-right reveal-delay-4">
+            This track emphasizes retrieval quality, vector search, model-assisted tooling, and the practical systems
+            needed to ship applied AI work in real engineering environments.
+          </p>
+
+          <div class="hero-actions reveal reveal-right reveal-delay-4">
+            <a class="button-primary" href="../assets/files/DataScience_EthanLiu_Resume.pdf" target="_blank"
+              rel="noreferrer">View Data Science Resume</a>
+            <a class="button-secondary" href="../software-engineering/">Software Engineering Portfolio</a>
+            <a class="button-secondary" href="../">Back to Gateway</a>
+          </div>
+
+          <div class="social-links reveal reveal-right reveal-delay-4">
+            <a href="https://www.linkedin.com/in/ethan-liu-/" target="_blank" rel="noreferrer"
+              aria-label="Visit Ethan Liu on LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1Zm1.3 2.16H5.64V19h2.6v-8.34Zm4.14 0H9.8V19h2.58v-4.39c0-2.45 3.17-2.65 3.17 0V19h2.6v-5.28c0-4.11-4.7-3.96-5.77-1.94v-1.12Z" />
+              </svg>
+            </a>
+            <a href="https://github.com/WebForks/" target="_blank" rel="noreferrer"
+              aria-label="Visit Ethan Liu on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .7a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.3c-3.3.7-4-1.4-4-1.4-.6-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.7-2.7-.3-5.6-1.4-5.6-6.1 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.6 11.6 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.9.1 3.2.8.9 1.2 2 1.2 3.3 0 4.7-2.8 5.8-5.6 6.1.4.4.8 1.1.8 2.3v3.4c0 .3.2.7.8.6A12 12 0 0 0 12 .7Z" />
+              </svg>
+            </a>
+            <a href="mailto:eliuusa@gmail.com" aria-label="Send Ethan Liu an email">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5v-13Zm2.1.5L12 11.1 18.9 6H5.1Zm13.4 1.3-5.7 4.2a1.4 1.4 0 0 1-1.6 0L5.5 7.3v11.2c0 .3.2.5.5.5h12c.3 0 .5-.2.5-.5V7.3Z" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero-snapshot reveal reveal-up reveal-delay-4">
+            <div class="snapshot-card">
+              <span class="snapshot-label">Focus</span>
+              <strong>AI Tooling</strong>
+            </div>
+            <div class="snapshot-card">
+              <span class="snapshot-label">Stack</span>
+              <strong>Python, Go, C++</strong>
+            </div>
+            <div class="snapshot-card">
+              <span class="snapshot-label">Specialty</span>
+              <strong>RAG + MCP Systems</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-indicator" href="#about" aria-label="Scroll to the about section">
+        <span></span>
+      </a>
+    </section>
+
+    <section id="about" class="section-block">
+      <div class="section-shell">
+        <div class="panel about-panel reveal reveal-up">
+          <div class="section-heading-wrap">
+            <p class="section-kicker">Profile</p>
+            <h2 class="section-heading">About Me</h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-copy">
+              <p>
+                I build production-minded AI systems for engineering teams. My work tends to sit at the seam between
+                model capability and actual utility: retrieval pipelines, local LLM workflows, internal tools,
+                packaging systems, and developer interfaces that teams can rely on.
+              </p>
+              <p>
+                Across Tone Software and Siemens, I have worked on documentation ingestion, vector search, evaluation
+                of AI coding tools, local LLM integrations, and the infrastructure needed to make those systems usable
+                in real environments.
+              </p>
+              <p>
+                I prefer end-to-end ownership: shaping the data path, wiring APIs and storage, and tightening the user
+                experience until the system becomes genuinely helpful.
+              </p>
+            </div>
+
+            <div class="about-list">
+              <div class="detail-row">
+                <span class="detail-label">Location</span>
+                <span class="detail-value">Los Angeles, CA</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Email</span>
+                <a class="detail-value" href="mailto:eliuusa@gmail.com">eliuusa@gmail.com</a>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Current Focus</span>
+                <span class="detail-value">AI tooling, RAG, local-first workflows</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Interests</span>
+                <span class="detail-value">Developer UX, search quality, applied ML systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-block">
+      <div class="section-shell">
+        <div class="section-heading-wrap reveal reveal-up">
+          <p class="section-kicker">Timeline</p>
+          <h2 class="section-heading">Experience</h2>
+        </div>
+
+        <div class="timeline reveal reveal-up">
+          <article class="timeline-entry panel">
+            <div class="timeline-marker">TS</div>
+            <div class="timeline-content">
+              <div class="entry-header">
+                <div>
+                  <h3>Software Engineer <span class="entry-company">@ Tone Software Corporation</span></h3>
+                  <p class="entry-meta">Anaheim, CA</p>
+                </div>
+                <span class="entry-date">June 2025 - Present</span>
+              </div>
+              <p class="entry-summary">
+                Building internal AI and developer tooling across CRM workflows, packaging systems, and low-level
+                utilities.
+              </p>
+              <ul class="entry-list">
+                <li>Built an MCP server backed by locally hosted LLMs for secure internal SugarCRM assistance.</li>
+                <li>Developed a Go CLI that authenticates against SugarCRM APIs and exposes CRM tools to the MCP
+                  layer.</li>
+                <li>Created an internal packaging and deployment app for QA-ready product builds.</li>
+                <li>Built a cross-platform C++ utility to extract embedded font files from PDFs.</li>
+              </ul>
+              <div class="pill-row">
+                <span class="pill">Go</span>
+                <span class="pill">C++</span>
+                <span class="pill">MCP</span>
+                <span class="pill">Local LLMs</span>
+                <span class="pill">SugarCRM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-entry panel">
+            <div class="timeline-marker">TS</div>
+            <div class="timeline-content">
+              <div class="entry-header">
+                <div>
+                  <h3>Software Engineer Intern <span class="entry-company">@ Tone Software Corporation</span></h3>
+                  <p class="entry-meta">Anaheim, CA</p>
+                </div>
+                <span class="entry-date">Dec 2024 - June 2025</span>
+              </div>
+              <p class="entry-summary">
+                Focused on retrieval quality, infrastructure, and evaluation workflows for internal AI development.
+              </p>
+              <ul class="entry-list">
+                <li>Implemented a RAG pipeline for documentation and code search using Qdrant and E5-Large-V2
+                  embeddings.</li>
+                <li>Prototyped and evaluated AI coding assistants by benchmarking code completion and refactor
+                  accuracy.</li>
+                <li>Curated training and retrieval datasets through cleanup, deduplication, and prompt
+                  standardization.</li>
+                <li>Provisioned and deployed coding and testing infrastructure across staging and production
+                  environments.</li>
+              </ul>
+              <div class="pill-row">
+                <span class="pill">Python</span>
+                <span class="pill">Qdrant</span>
+                <span class="pill">Embeddings</span>
+                <span class="pill">Evaluation</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-entry panel">
+            <div class="timeline-marker">SD</div>
+            <div class="timeline-content">
+              <div class="entry-header">
+                <div>
+                  <h3>Application Developer Intern <span class="entry-company">@ Siemens Digital Industries
+                      Software</span></h3>
+                  <p class="entry-meta">Costa Mesa, CA</p>
+                </div>
+                <span class="entry-date">June 2023 - June 2025</span>
+              </div>
+              <p class="entry-summary">
+                Worked on the data and retrieval foundations for an internal documentation assistant.
+              </p>
+              <ul class="entry-list">
+                <li>Collected and converted website documentation and PDFs into RAG-ready text with chunking and
+                  metadata.</li>
+                <li>Collaborated on system architecture for a documentation Q&amp;A assistant.</li>
+                <li>Implemented embedding generation, vector indexing, and top-k retrieval for grounded responses.</li>
+                <li>Integrated an AI assistant bot into an internal documentation website.</li>
+              </ul>
+              <div class="pill-row">
+                <span class="pill">RAG</span>
+                <span class="pill">Vector Search</span>
+                <span class="pill">Docs UX</span>
+                <span class="pill">LLM Integration</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section-block">
+      <div class="section-shell">
+        <div class="section-heading-wrap reveal reveal-up">
+          <p class="section-kicker">Academic</p>
+          <h2 class="section-heading">Education</h2>
+        </div>
+
+        <div class="list-grid reveal reveal-up">
+          <article class="list-card">
+            <span class="list-date">Dec 2025 - Present</span>
+            <h3>M.S. in Data Science</h3>
+            <p>University of Pennsylvania</p>
+            <span class="list-location">Philadelphia, PA</span>
+          </article>
+          <article class="list-card">
+            <span class="list-date">Aug 2021 - May 2025</span>
+            <h3>B.S. in Computer Science</h3>
+            <p>California State University, Long Beach</p>
+            <span class="list-location">Long Beach, CA</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-block">
+      <div class="section-shell">
+        <div class="section-heading-wrap reveal reveal-up">
+          <p class="section-kicker">Selected Work</p>
+          <h2 class="section-heading">Projects</h2>
+        </div>
+
+        <div class="project-list reveal reveal-up">
+          <article class="project-card">
+            <div class="project-thumb thumb-lora">
+              <span>LoRA</span>
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <div>
+                  <h3>Qwen-Image-Edit I2I LoRA</h3>
+                  <p class="project-type">ML Project</p>
+                </div>
+                <span class="project-date">2025</span>
+              </div>
+              <ul class="entry-list compact-list">
+                <li>Automated image collection and preprocessing for reproducible LoRA training datasets.</li>
+                <li>Trained and monitored LoRA fine-tuning on a remote NVIDIA RTX 6000 GPU for 11k steps.</li>
+                <li>Added QA checks for duplicate detection, resolution thresholds, and caption validation.</li>
+              </ul>
+              <div class="pill-row">
+                <span class="pill">Python</span>
+                <span class="pill">Docker</span>
+                <span class="pill">Selenium</span>
+                <span class="pill">PyTorch</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb thumb-rag">
+              <span>RAG</span>
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <div>
+                  <h3>Local RAG Chatbot</h3>
+                  <p class="project-type">RAG Application</p>
+                </div>
+                <span class="project-date">2025</span>
+              </div>
+              <ul class="entry-list compact-list">
+                <li>Built a local Retrieval-Augmented Generation app using LangChain, Ollama, and Qwen3.</li>
+                <li>Ingested documentation, generated 1024-d embeddings, and stored vectors in Azure Cosmos DB.</li>
+                <li>Implemented grounded top-k retrieval and local development through Cosmos DB Emulator in
+                  Docker.</li>
+              </ul>
+              <div class="pill-row">
+                <span class="pill">LangChain</span>
+                <span class="pill">Ollama</span>
+                <span class="pill">Qwen3</span>
+                <span class="pill">Azure Cosmos DB</span>
+                <span class="pill">Docker</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-block">
+      <div class="section-shell">
+        <div class="section-heading-wrap reveal reveal-up">
+          <p class="section-kicker">Capabilities</p>
+          <h2 class="section-heading">Skills</h2>
+        </div>
+
+        <div class="skills-grid reveal reveal-up">
+          <article class="skill-group">
+            <h3>Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>Go</li>
+              <li>C++</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>AI / ML</h3>
+            <ul>
+              <li>LLMs</li>
+              <li>RAG</li>
+              <li>LoRA</li>
+              <li>LangChain</li>
+              <li>PyTorch</li>
+              <li>Qwen3</li>
+              <li>E5-Large-V2</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>Data Platforms</h3>
+            <ul>
+              <li>Qdrant</li>
+              <li>Azure Cosmos DB Vector Search</li>
+              <li>SugarCRM</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>Tools</h3>
+            <ul>
+              <li>Docker</li>
+              <li>Selenium</li>
+              <li>MCP</li>
+              <li>Packaging and Release Tooling</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-block">
+      <div class="section-shell">
+        <div class="panel contact-panel reveal reveal-up">
+          <div class="section-heading-wrap">
+            <p class="section-kicker">Reach Out</p>
+            <h2 class="section-heading">Contact</h2>
+          </div>
+
+          <div class="contact-grid">
+            <div>
+              <p class="contact-copy">
+                If you are building AI-enabled internal tools, retrieval systems, or developer workflows, I am open to
+                conversations about the engineering problems behind them.
+              </p>
+            </div>
+
+            <div class="contact-methods">
+              <a class="contact-link" href="mailto:eliuusa@gmail.com">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">eliuusa@gmail.com</span>
+              </a>
+              <a class="contact-link" href="https://github.com/WebForks" target="_blank" rel="noreferrer">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/WebForks</span>
+              </a>
+              <a class="contact-link" href="https://linkedin.com/in/ethan-liu-" target="_blank" rel="noreferrer">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">linkedin.com/in/ethan-liu-</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact-footer">
+    <div class="section-shell footer-content">
+      <span class="footer-text">Ethan Liu</span>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/ethan-liu-/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1Zm1.3 2.16H5.64V19h2.6v-8.34Zm4.14 0H9.8V19h2.58v-4.39c0-2.45 3.17-2.65 3.17 0V19h2.6v-5.28c0-4.11-4.7-3.96-5.77-1.94v-1.12Z" />
+          </svg>
+        </a>
+        <a href="https://github.com/WebForks/" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 .7a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.3c-3.3.7-4-1.4-4-1.4-.6-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.7-2.7-.3-5.6-1.4-5.6-6.1 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.6 11.6 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.9.1 3.2.8.9 1.2 2 1.2 3.3 0 4.7-2.8 5.8-5.6 6.1.4.4.8 1.1.8 2.3v3.4c0 .3.2.7.8.6A12 12 0 0 0 12 .7Z" />
+          </svg>
+        </a>
+        <a href="mailto:eliuusa@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5v-13Zm2.1.5L12 11.1 18.9 6H5.1Zm13.4 1.3-5.7 4.2a1.4 1.4 0 0 1-1.6 0L5.5 7.3v11.2c0 .3.2.5.5.5h12c.3 0 .5-.2.5-.5V7.3Z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
